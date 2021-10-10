@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"rel="stylesheet">
+</head>
+<body>
+    <div class='form-container hidden'>
+        <form id="event-form" class="event-form">
+            <h2 class="event-form_title">New Event</h2>
+            <label for="title">
+                <input type="text" placeholder="Enter an Even Title" id="title">
+            </label>
+            <label for="event">
+                <input type="datetime-local" id="event">
+            </label>
+            <button type="submit" value="Add New Countdown">
+                <i class="fas fa-calendar-week"></i>
+                Add New Countdown
+            </button>
+        </form>
+    </div>
+    <div class="event-container hidden">
+        <div class="event">
+            <button class="event__btn">
+                <i class="fas fa-trash"></i>
+            </button>
+            <h2 class="event__title">TITLE</h2>
+            <div class="event_countdown">
+                <div class="event_item">
+                    <p class="event_item--title" id="day__title">15</p>
+                    <p id="day__name">DAYS</p>
+                </div>
+                <div class="event_item">
+                    <p class="event_item--title" id="hour__title">15</p>
+                    <p id="hour__name">HOURS</p>
+                </div>
+                <div class="event_item">
+                    <p class="event_item--title" id="minute__title">15</p>
+                    <p id="minute__name">MINUTES</p>
+                </div>
+                <div class="event_item">
+                    <p class="event_item--title" id="second__title">15</p>
+                    <p id="second__name">SECONDS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
